@@ -1,0 +1,92 @@
+.t-wrapper {
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  height: 100vh;
+  gap: 2rem;
+  margin-top: 7rem;
+}
+
+.t-heading > * {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.t-heading span:nth-of-type(2) {
+  color: var(--orange);
+  margin: 0 1rem;
+}
+.testimonils {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem;
+  width: 30rem;
+  height: 12rem;
+  background: rgba(255, 255, 255, 0.26);
+  border: 7px solid var(--blueCard);
+  box-shadow: var(--boxShadow);
+  border-radius: 20px;
+}
+
+.testimonils > img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+}
+
+.testimonils > span {
+  color: var(--gray);
+}
+
+/*  */
+
+.t-wrapper .swiper {
+  width: 100%;
+  height: 70%;
+}
+
+.t-wrapper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.t-wrapper .swiper-pagination-bullet-active {
+  background-color: var(--orange);
+}
+.t-blur1 {
+  z-index: -1;
+  left: 38rem;
+  top: 16rem;
+}
+
+.t-blur2 {
+  z-index: -1;
+  left: 0;
+  top: 8rem;
+}
+
+@media screen and (max-width: 480px) {
+  .t-wrapper {
+    padding: 0;
+  }
+  .testimonils > img {
+    width: 5rem;
+    height: 4rem;
+  }
+  .t-heading > * {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .testimonils > span {
+    color: var(--gray);
+    font-size: 0.7rem;
+    padding: 0.7rem 0;
+  }
+}
