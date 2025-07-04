@@ -1,0 +1,61 @@
+.n-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  cursor: pointer;
+}
+.n-left {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex: 1;
+}
+
+.n-name {
+  font-size: 1.3rem;
+  color: var(--orange);
+  font-weight: bold;
+}
+
+.n-right {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+}
+
+.n-list {
+  flex: 1;
+}
+
+.n-list > ul {
+  display: flex;
+  margin: 2rem;
+  gap: 2rem;
+  list-style: none;
+}
+.n-list > ul > li:hover {
+  color: var(--orange);
+}
+
+@media screen and (max-width: 480px) {
+  .n-wrapper {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+  }
+  .n-name {
+    position: absolute;
+  }
+  .n-left {
+    position: absolute;
+  }
+
+  .n-list {
+    display: none;
+  }
+  .n-button {
+    display: none;
+  }
+}
