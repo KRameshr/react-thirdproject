@@ -1,0 +1,122 @@
+:root {
+  --display: flex;
+  --flexDirection: column;
+  --EqualWidth: 1;
+  --weight: bold;
+  --Size: 3rem;
+}
+
+.services {
+  padding: 0 3rem;
+  display: var(--display);
+  height: 100vh;
+  margin: 9rem 0 13rem 0;
+  gap: 2rem;
+  flex: 1;
+}
+
+.s-left {
+  display: var(--display);
+  flex-direction: column;
+  position: relative;
+}
+.s-left > :nth-child(1) {
+  color: var(--black);
+  font-weight: var(--weight);
+  font-size: var(--Size);
+}
+.s-left > :nth-child(2) {
+  color: var(--gray);
+  font-size: 15px;
+  margin-top: 1rem;
+}
+.s-left > :nth-child(3) {
+  color: var(--gray);
+  font-size: 15px;
+  margin-top: 1rem;
+}
+.s-button {
+  margin-top: 2rem;
+}
+
+.s-right {
+  position: relative;
+}
+.s-right > * {
+  position: absolute;
+}
+.cardsOne {
+  left: 8rem;
+}
+.cardsOne > heading {
+  left: 8rem;
+}
+.cardsTwo {
+  top: 12rem;
+  left: -10rem;
+}
+
+.cardsThree {
+  bottom: 18rem;
+  left: 8rem;
+}
+.s-blur1 {
+  z-index: -1;
+  left: -1rem;
+  top: 50rem;
+}
+
+.s-blur2 {
+  z-index: -1;
+  left: 50rem;
+  top: 55rem;
+}
+
+@media screen and (max-width: 480px) {
+  .services {
+    margin-top: 0;
+    flex-direction: column;
+    gap: 5rem;
+    height: 66rem;
+    padding: 0;
+  }
+  .s-left {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5rem;
+  }
+  .s-left > :nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--black);
+  }
+
+  .s-left > :nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--orange);
+  }
+
+  .s-left > :nth-child(3) {
+    color: var(--gray);
+    font-size: 18px;
+    margin-top: 1rem;
+    align-items: justify;
+    width: 90%;
+  }
+  .s-right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 17rem;
+    left: -8rem;
+  }
+  .s-right > * {
+    position: static;
+  }
+}
