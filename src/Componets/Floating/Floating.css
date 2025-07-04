@@ -1,0 +1,17 @@
+.floating {
+  display: flex;
+  justify-content: space-around;
+  background: var(--White);
+  align-items: center;
+  border-radius: 25px;
+  box-shadow: var(--smboxShadow);
+  padding: 0px 25px 0px 0px;
+  height: 4rem;
+  width: 12rem;
+}
+.floating > :nth-child(1) {
+  transform: scale(0.4);
+}
+.floating > span {
+  font-family: sans-serif;
+}
