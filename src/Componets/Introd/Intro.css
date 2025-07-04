@@ -1,0 +1,152 @@
+:root {
+  --display: flex;
+  --flexDirection: column;
+  --EqualWidth: 1;
+  --weight: bold;
+  --Size: 3rem;
+}
+
+.intro {
+  display: var(--display);
+  height: 77vh;
+  margin: 6rem 0;
+}
+
+.i-left {
+  display: var(--display);
+  flex-direction: var(--flexDirection);
+  flex: var(--EqualWidth);
+  position: relative;
+  gap: 2rem;
+}
+
+.i-name {
+  display: var(--display);
+  flex-direction: var(--flexDirection);
+}
+
+.i-name > :nth-child(1) {
+  font-weight: var(--weight);
+  font-size: var(--Size);
+  color: var(--black);
+}
+
+.i-name > :nth-child(2) {
+  font-weight: var(--weight);
+  font-size: var(--Size);
+  color: var(--orange);
+}
+
+.i-name > :nth-child(3) {
+  font-size: 14px;
+  font-weight: 200;
+  color: var(--gray);
+  margin: 20px 0;
+}
+.i-button {
+  width: 6rem;
+  height: 3rem;
+}
+.i-icon {
+  transform: scale(0.6);
+  display: flex;
+  gap: 3rem;
+}
+
+.i-right {
+  flex: 1;
+  position: relative;
+}
+.i-right > * {
+  z-index: 1;
+  position: absolute;
+}
+.i-right > :nth-child(1) {
+  transform: scale(0.69);
+  top: -15%;
+  left: -20%;
+}
+.i-right > :nth-child(2) {
+  transform: scale(0.69);
+  top: -5rem;
+  left: -3rem;
+}
+.i-right > :nth-child(3) {
+  transform: scale(1.4);
+  left: 25%;
+}
+.i-right > :nth-child(4) {
+  transform: scale(0.6);
+  left: -30%;
+  top: -20%;
+}
+
+.i-ff {
+  left: 17rem;
+  top: -2rem;
+}
+.i-fs {
+  top: 16.6rem;
+  left: -2rem;
+}
+
+/*  */
+.i-blur1 {
+  top: -25%;
+  left: 50%;
+  z-index: -1;
+}
+.i-blur2 {
+  top: 55%;
+  left: -20%;
+  z-index: -1;
+}
+
+@media screen and (max-width: 480px) {
+  .intro {
+    flex-direction: column;
+    height: 64rem;
+  }
+  .i-button {
+    width: 6rem;
+    height: 2rem;
+  }
+
+  .i-left {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5rem;
+  }
+  .i-name > :nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--black);
+  }
+
+  .i-name > :nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--orange);
+  }
+
+  .i-name > :nth-child(3) {
+    color: var(--gray);
+    font-size: 18px;
+    margin-top: 1rem;
+    align-items: justify;
+    width: 90%;
+  }
+  .i-right {
+    transform: scale(0.8);
+    left: -3rem;
+  }
+  .i-right .blur {
+    display: none;
+  }
+  .floating-dev:nth-of-type(1) {
+    top: -7rem !important;
+  }
+}
